@@ -1,0 +1,250 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-bar {
+  height: 50px;
+  background-color: #0066ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-title {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Social icons */
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+.box {
+  text-decoration: none; 
+}
+
+.box i {
+  position: relative;
+  color: #0066ff;
+  background-color: #ffffff;
+  padding: 3px 15px;
+  margin: 0 10px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+}
+
+.box i::after {
+  content: "FOLLOW";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0066ff;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 0.4s;
+}
+
+.box i:hover::after {
+  transform: translateY(0);
+}
+
+/* Main container */
+.container {
+  margin: 2rem 12%;
+}
+
+/* Post from container */
+.post-form-container {
+  border: 2px solid #d3d3d3a4;
+  padding: 1rem;
+}
+
+#form-title {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  color: #585858;
+}
+
+#form-para {
+  color: #6e6e6e;
+}
+
+input, textarea {
+  display: block;
+  margin: 1rem;
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #d3d3d3a4;
+}
+
+@keyframes borderAnim{
+  25% {
+    border: 2px solid rgba(255, 0, 0, 0.075);
+  }
+  50% {
+    border: 2px solid rgba(255, 0, 0, 0.527);
+  }
+  75% {
+    border: 2px solid rgba(255, 0, 0, 0.075);
+  }
+  100% {
+    border: 1px solid #d3d3d3a4;
+  }
+}
+
+textarea {
+  height: 55px;
+}
+
+input:focus, textarea:focus {
+  border: teal 1px solid;
+  box-shadow: 0px 0px 2px 2px rgba(0, 128, 128, 0.466);
+  outline: none;
+}
+
+.btn {
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  height: 3rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #0066ff;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: all 0.2s ease-in;
+}
+
+.update-btn {
+  background-color: #ff9900;
+}
+
+.cancel-btn {
+  background-color: #ffffff;
+  color: #0066ff;
+}
+
+
+.btn:hover {
+  transform: scale(0.98);
+  color: #0066ff;
+  background-color: #ffffff;
+  border: 1px solid #0066ff;
+}
+
+.update-btn:hover {
+  color: #ff9900;
+  border: 1px solid #ff9900;
+}
+
+/* Total post */
+.total-post {
+  color: #585858;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Search input*/
+.search-input {
+  display: inline;
+  border: none;
+  border-bottom: 1px solid #585858;
+}
+
+.search-input:focus {
+  border: none;
+  border-bottom: teal 1px solid;
+  box-shadow: none;
+}
+
+.fa-search {
+  color: #0066ff;
+}
+
+/* Post list */
+.card {
+  margin: 2rem auto;
+  border: 2px solid #5d96eba4;
+  padding: 20px;
+}
+
+.card-title {
+  color: #585858;
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+}
+
+.card-para {
+  color: #6e6e6e;
+  margin-bottom: 0.7rem;
+}
+
+.card-link {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 50%; 
+  transition: all 0.05s ease-in;
+}
+
+.delete {
+  color: #ff0000;
+  margin-left: 15px;
+}
+
+.delete:hover {
+  background-color: #ff0000; 
+  color: #ffffff;
+}
+
+.edit:hover {
+  background-color: #0000ff; 
+  color: #ffffff;
+}
+
+/* Alert message */
+.alert {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0;
+  margin: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  background-color: #ff0000ec;
+}
+
+.alert-success {
+  background-color: #00ff00ec;
+}
+.alert-danger {
+  background-color: #ff0000ec;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
